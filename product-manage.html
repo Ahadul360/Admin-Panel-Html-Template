@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- TopNav Code Start-->
+  <header>
+    <div class="navbar">
+      <div class="menu-container">
+        <div class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <h3 class="site-name">Admin Panel</h3>
+    </div>
+  </header>
+  <!-- TopNav Code End-->
+
+  <!-- SideNav Code Start-->
+  <div class="sidenav">
+    <div class="sidenav-top">
+      <li>
+        <a href="#">X</a>
+      </li>
+      <li>Close</li>
+    </div>
+    <div class="sidenav-welcome">
+      <span>Welcome Chief</span>
+    </div>
+    <ul class="sidenav-menu">
+      <li><a href="#">Login</a></li>
+    </ul>
+  </div>
+  <!-- SideNav Code End-->
+
+
+  <div class="content-overlay">
+  </div>
+
+  <!-- Main Content Area Start -->
+  <div class="content-area">
+
+    <!--Add Product Form Start-->
+    <section class="section">
+      <form id="add-product" class="form add-form">
+        <div class="form-header">
+          <h2>Add Product</h2>
+        </div>
+        <div>
+          <input type="text" name="name" placeholder="Product Name" id="product-name" />
+        </div>
+        <div class="select-dropdown">
+          <label>Choose a Category:
+            <select name="cars" id="cars">
+              <option value="volvo">Digital</option>
+              <option value="volvo">Electronic</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            <div class="custom-file-chooser">Choose Image</div>
+            <input style="display: none" type="file" name="image" id="product-image" accept="image/*" />
+          </label>
+        </div>
+        <div>
+          <input type="submit" name="submit" value="Add" />
+          <div class="error"></div>
+        </div>
+      </form>
+    </section>
+    <!--Add Product Form End-->
+
+  </div>
+  <footer>
+    <span>Created By Ahadul</span>
+  </footer>
+  <!-- Main Content Area End -->
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

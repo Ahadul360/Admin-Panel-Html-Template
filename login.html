@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- TopNav Code Start-->
+  <header>
+    <div class="navbar">
+      <div class="menu-container">
+        <div class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <h3 class="site-name">Admin Panel</h3>
+    </div>
+  </header>
+  <!-- TopNav Code End-->
+
+  <!-- SideNav Code Start-->
+  <div class="sidenav">
+    <div class="sidenav-top">
+      <li>
+        <a href="#">X</a>
+      </li>
+      <li>Close</li>
+    </div>
+    <div class="sidenav-welcome">
+      <span>Welcome Chief</span>
+    </div>
+    <ul class="sidenav-menu">
+      <li><a href="#">Login</a></li>
+    </ul>
+  </div>
+  <!-- SideNav Code End-->
+
+
+  <div class="content-overlay">
+  </div>
+
+  <!-- Main Content Area Start -->
+  <div class="content-area">
+    <!-- Login Section Start -->
+    <section class="section">
+      <div class="login-signup-form-container">
+        <form id="login-form" class="login-singup-form">
+          <div class="form-header">
+            <h2>Login</h2>
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Email" id="email" />
+          </div>
+          <div>
+            <input type="password" name="password" placeholder="Password" id="password" />
+          </div>
+          <div>
+            <input type="submit" name="submit" value="Login" />
+            <div class="error"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Login Section End -->
+	
+  </div>
+  <footer>
+    <span>Created By Ahadul</span>
+  </footer>
+  <!-- Main Content Area End -->
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
